@@ -14,7 +14,7 @@
             <nav>
                 <img src="images/logo.gif" class="logo">
                 <ul>
-                    <li><a href="#">Introduction</a></li>
+                    <li><a href="#">About</a></li>
                     <li><a href="#">Experience</a></li>
                     <li><a href="#">Hobbies</a></li>
                     <li><a href="#">Portfolio</a></li>
@@ -23,10 +23,76 @@
             </nav>
             <div class="header-text">
                 <p>Electrical Engineer</p>
-                <h1>Hi, I'm <span>Andrew</span><br>Liu From UCI</h1>
+                <h1>Hi, I'm <span>Andrew</span><br>Liu From UC Irvine</h1>
             </div>
         </div>
     </div>
+
+    <!--------About Me Section-------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/caltech-edit.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="intro"><span>Hi! My name is Andrew Liu. I an a resourceful and dedicated 
+                       college student with international experience, currently 
+                       pursuing a BS in Electrical Engineering and Computer Engineering 
+                       at UC Irvine. I am eager to leverage skills in Python, C, VHDL, 
+                       and other engineering skills to contribute to technology development. 
+                       Deeply motivated and enthusiastic about creating beneficial technologies 
+                       and making an impact on future computer technology and engineering.</span></p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Electronic Circuit Engineer</span><br>Designing Electrical Circuit and PCB Boards</li>
+                            <li><span>Embedded System Engineer</span><br>Arduino, CANBUS, Low Voltage Circuit Designs</li>
+                            <li><span>Application Developer</span><br>Building Web/Android Applications</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>September 2022 - Present</span><br>Electrical Engineer at UCI ZotSun (Former UCI Solar Car)</li>
+                            <li><span>July 2022 - September 2022</span><br>DevOps IT Engineer Intern at TSMC</li>
+                            <li><span>August 2021 - June 2022</span><br>Housing Attendant at UCI Middle Earth</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - 2025 (Expected Graduation)</span><br>B.S. in Electrical Engineering<br>
+                                B.S. in Computer Engineering from UC Irvine</li>
+                            <li><span>2019</span><br>H.S. Diploma from San Mateo High School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        } 
+
+    </script>
 </body>
 
 </html>
