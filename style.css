@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
@@ -74,6 +74,22 @@ nav ul li a:hover::after {
 .header-text h1 span {
     color: #ff004f;
 }
+
+.role-container p {
+    font-size: 30px;
+}
+
+/* Testing slider for title roles carousel */
+/* .slider {
+    color: #ff004f;
+    animation: slider 6s linear infinite;
+    box-sizing: border-box;
+}
+@keyframes slider {
+    0%{margin-top: -200px;}
+    50%{margin-top: 0px;}
+    100%{margin-top: 200px;}
+} */
 
 /* --------About Me Section-------- */
 

@@ -23,8 +23,11 @@
                 </ul>
             </nav>
             <div class="header-text">
-                <p>Electrical Engineer</p>
-                <h1>Hi, I'm <span>Andrew</span><br>Liu From UC Irvine</h1>
+                <div class="role-container">
+                    <p><span class="auto-type"></span></p>
+                </div>
+                
+                <h1>Hi, I'm <span>Andrew</span><br>Liu from UC Irvine</h1>
             </div>
         </div>
     </div>
@@ -82,7 +85,7 @@
 
     <div id="services">
         <div class="container">
-            <h1 class="sub-title">My Services</h1>
+            <h1 class="sub-title">What I Bring to the Team</h1>
             <div class="services-list">
                 <div>
                     <i class="fa-solid fa-microchip"></i>
@@ -133,6 +136,17 @@
         } 
 
     </script>
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Electrical Engineer", "Computer Engineer", "Web and App Developer"],
+            typeSpeed: 100,
+            backSpeed: 120,
+            loop: true
+        })
+    </script>
+
 </body>
 
 </html>
