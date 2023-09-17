@@ -239,10 +239,15 @@
                     msg.innerHTML = "Message has been sent. Thank you!"
                     setTimeout(function() {
                         msg.innerHTML = ""
-                    }, 5000)
+                    }, 4000)
                     form.reset()
                 })
-                .catch(error => console.error('Error!', error.message))
+                .catch(error => {
+                    msg.innerHTML = "Error while sending. Please try again."
+                    setTimeout(function() {
+                        msg.innerHTML = ""
+                    }, 4000)
+                })
             })
         </script>
     </body>
