@@ -1,233 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrew (Kuan Ting) Liu's Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/34dee973c9.js" crossorigin="anonymous"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Andrew (Kuan Ting) Liu's Personal Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/34dee973c9.js" crossorigin="anonymous"></script>
+    </head>
 
-<body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/Logo.png" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header" onclick="closemenu()">Home</a></li>
-                    <li><a href="#about" onclick="closemenu()">About</a></li>
-                    <li><a href="#services" onclick="closemenu()">Expertise</a></li>
-                    <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
-                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <div class="role-container">
-                    <p><span class="auto-type"></span></p>
-                </div>
-                
-                <h1>Hi, I'm <span>Andrew</span><br>Liu from UC Irvine</h1>
-            </div>
-        </div>
-    </div>
-
-    <!--------About Me Section-------->
-
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/caltech-edit.jpg">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p class="intro"><span>Welcome to my website! My name is Andrew Liu. I am a dedicated 
-                       college student with international experience, currently 
-                       pursuing a BS in Electrical Engineering and Computer Engineering 
-                       at UC Irvine. I am eager to leverage skills in Python, C, VHDL, 
-                       and other engineering skills to contribute to technology development. 
-                       I am also deeply motivated and enthusiastic about creating beneficial technologies 
-                       and making an impact on future computer technology and engineering.</span></p>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/Logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header" onclick="closemenu()">Home</a></li>
+                        <li><a href="#about" onclick="closemenu()">About</a></li>
+                        <li><a href="#services" onclick="closemenu()">Expertise</a></li>
+                        <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
+                        <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <div class="role-container">
+                        <p><span class="auto-type"></span></p>
+                    </div>
                     
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <h1>Hi, I'm <span>Andrew</span><br>Liu from UC Irvine</h1>
+                </div>
+            </div>
+        </div>
+
+        <!--------About Me Section-------->
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/caltech-edit.jpg">
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Electronic Circuit</span><br>Designing Electrical Circuit and PCB Boards</li>
-                            <li><span>Embedded System</span><br>Arduino, CANBUS, I2C, Sensors, and LV Circuits</li>
-                            <li><span>Equipment & Machines</span><br>Oscilloscope, Function Generator, Digital Multimeter, 3D Printing, Laser Cutting, Soldering</li>
-                            <li><span>Programming</span><br>Python, C / C++, VHDL, Assembly, Dart / Flutter, HTML / CSS / JavaScript</li>
-                            <li><span>CAD & Software</span><br>Git, GitHub, Xilinx Vivado, TinkerCAD, LTSpice, SolidWorks, KiCAD, Figma, MS Office</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>September 2022 - Present</span><br>Electrical Engineer at UCI ZotSun (Former UCI Solar Car)</li>
-                            <li><span>July 2022 - September 2022</span><br>DevOps IT Engineer Intern at TSMC</li>
-                            <li><span>August 2021 - June 2022</span><br>Housing Attendant at UCI Middle Earth</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2021 - 2025 (Expected Graduation)</span><br>B.S. in Electrical Engineering w/ Semiconductor and Optoelectronics Specialization<br>
-                                B.S. in Computer Engineering from UC Irvine</li>
-                            <li><span>2019</span><br>H.S. Diploma from San Mateo High School</li>
-                        </ul>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p class="intro"><span>Welcome to my website! My name is Andrew Liu. I am a dedicated 
+                        college student with international experience, currently 
+                        pursuing a BS in Electrical Engineering and Computer Engineering 
+                        at UC Irvine. I am eager to leverage skills in Python, C, VHDL, 
+                        and other engineering skills to contribute to technology development. 
+                        I am also deeply motivated and enthusiastic about creating beneficial technologies 
+                        and making an impact on future computer technology and engineering.</span></p>
+                        
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Electronic Circuit</span><br>Designing Electrical Circuit and PCB Boards</li>
+                                <li><span>Embedded System</span><br>Arduino, CANBUS, I2C, Sensors, and LV Circuits</li>
+                                <li><span>Equipment & Machines</span><br>Oscilloscope, Function Generator, Multimeter, 3D Printing, Laser Cutting, Soldering</li>
+                                <li><span>Programming</span><br>Python, C / C++, VHDL, Assembly, Dart / Flutter, HTML / CSS / JavaScript</li>
+                                <li><span>CAD & Software</span><br>Git, Xilinx Vivado, TinkerCAD, LTSpice, SolidWorks, KiCAD, Figma, MS Office</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>September 2022 - Present</span><br>Electrical Engineer at UCI ZotSun (Former UCI Solar Car)</li>
+                                <li><span>July 2022 - September 2022</span><br>DevOps IT Engineer Intern at TSMC</li>
+                                <li><span>August 2021 - June 2022</span><br>Housing Attendant at UCI Middle Earth</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021 - 2025 (Expected Graduation)</span><br>B.S. in Electrical Engineering w/ Semiconductor and Optoelectronics Specialization<br>
+                                    B.S. in Computer Engineering from UC Irvine</li>
+                                <li><span>2019</span><br>H.S. Diploma from San Mateo High School</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!--------Services Section-------->
+        <!--------Services Section-------->
 
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">What I Bring to the Team</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-microchip"></i>
-                    <h2>Electronics and IC Design</h2>
-                    <p>Proficient in RTL design, network analysis, and filter design. Specialization in Semiconductor and Optoelectronics with strong background and knowledge
-                        on IC products.
-                    </p>
-                    <a href="#">Learn More</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-solar-panel"></i>
-                    <h2>Renewable Energy Solutions</h2>
-                    <p>Research and Development experience in Solar cells and panel manufacturing. Knowledgable regarding
-                        renewable energy power systems and design.
-                    </p>
-                    <a href="#">Learn More</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web and Applications Design</h2>
-                    <p>Created various web and applications with a wide range of languages including Python, C, HTML / CSS / JS, and Dart (Flutter).
-                        Strong background in programming.</p>
-                    <a href="#">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--------Portfolio Section-------->
-
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Projects</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/work-1.png">
-                    <div class="layer">
-                        <h3>Autonomous Rover</h3>
-                        <p>A self-driving rover which utlilizes photoresistors and PixyCam 2.0 
-                            to follow a black line, detect and pick up a red cup.</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">What I Bring to the Team</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-microchip"></i>
+                        <h2>Electronics and IC Design</h2>
+                        <p>Proficient in RTL design, network analysis, and filter design. Specialization in Semiconductor and Optoelectronics with strong background and knowledge
+                            on IC products.
+                        </p>
+                        <a href="#">Learn More</a>
                     </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-2.jpg">
-                    <div class="layer">
-                        <h3>Solar Car</h3>
-                        <p>A student-led solar-powered Electric Vehicle project at UC Irvine aiming to compete
-                            in the American Solar Challenge (ASC).</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <div>
+                        <i class="fa-solid fa-solar-panel"></i>
+                        <h2>Renewable Energy Solutions</h2>
+                        <p>Research and Development experience in Solar cells and panel manufacturing. Knowledgable regarding
+                            renewable energy power systems and design.
+                        </p>
+                        <a href="#">Learn More</a>
                     </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-3.png">
-                    <div class="layer">
-                        <h3>Chess Program in C</h3>
-                        <p>A chess program coded in C, Artificial Intelligence and complex algorithms included,
-                            available with GUI created using GTK.</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web and Applications Design</h2>
+                        <p>Created various web and applications with a wide range of languages including Python, C, HTML / CSS / JS, and Dart (Flutter).
+                            Strong background in programming.</p>
+                        <a href="#">Learn More</a>
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See More</a>
         </div>
-    </div>
 
-    <!--------Contact Section-------->
+        <!--------Portfolio Section-------->
 
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i> kuantl4@uci.edu</p>
-                    <p><i class="fa-solid fa-square-phone"></i> (650) 303 - 0447</p>
-                    <p><i class="fa-solid fa-location-dot"></i> Irvine, CA</p>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/kuan-ting-liu2023/"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/andrew.liu_2003/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://github.com/KuanTingLiu2003"><i class="fa-brands fa-github"></i></a>  
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h3>Autonomous Rover</h3>
+                            <p>A self-driving rover which utlilizes photoresistors and PixyCam 2.0 
+                                to follow a black line, detect and pick up a red cup.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
                     </div>
-                    <a href="documents/Andrew_(KuanTing)_Liu_Resume.pdf" download class="btn btn2">Download CV</a>
+                    <div class="work">
+                        <img src="images/work-2.jpg">
+                        <div class="layer">
+                            <h3>Solar Car</h3>
+                            <p>A student-led solar-powered Electric Vehicle project at UC Irvine aiming to compete
+                                in the American Solar Challenge (ASC).</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h3>Chess Program in C</h3>
+                            <p>A chess program coded in C, Artificial Intelligence and complex algorithms included,
+                                available with GUI created using GTK.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="contact-right">
-                    <form>
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+
+        <!--------Contact Section-------->
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> kuantl4@uci.edu</p>
+                        <p><i class="fa-solid fa-square-phone"></i> (650) 303 - 0447</p>
+                        <p><i class="fa-solid fa-location-dot"></i> Irvine, CA</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/kuan-ting-liu2023/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/andrew.liu_2003/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://github.com/KuanTingLiu2003"><i class="fa-brands fa-github"></i></a>  
+                        </div>
+                        <a href="documents/Andrew_(KuanTing)_Liu_Resume.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!---For About Me Section dynamic tabs-->
-    <script>
-        
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
+        <!---For About Me Section dynamic tabs-->
+        <script>
+            
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            } 
+
+        </script>
+    
+        <!---For typewriter effect on roles-->
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed(".auto-type", {
+                strings: ["Electrical Engineer", "Computer Engineer", "Web and App Developer"],
+                typeSpeed: 100,
+                backSpeed: 120,
+                loop: true
+            })
+        </script>
+
+        <!---Popup menu for phone and smaller screens--->
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu() {
+                sidemenu.style.right = "0";
             }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
+            function closemenu() {
+                sidemenu.style.right = "-200px";
             }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        } 
+        </script>
 
-    </script>
-   
-    <!---For typewriter effect on roles-->
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed(".auto-type", {
-            strings: ["Electrical Engineer", "Computer Engineer", "Web and App Developer"],
-            typeSpeed: 100,
-            backSpeed: 120,
-            loop: true
-        })
-    </script>
-
-    <!---Popup menu for phone and smaller screens--->
-    <script>
-        var sidemenu = document.getElementById("sidemenu");
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwRhjWMpzTRjqTAcG4lanyjDNy7zkcXZAS_KkAO_xA9NKpZKss1cKr_QxTgvkdVAHHM/exec'
+            const form = document.forms['submit-to-google-sheet']
         
-        function openmenu() {
-            sidemenu.style.right = "0";
-        }
-
-        function closemenu() {
-            sidemenu.style.right = "-200px";
-        }
-    </script>
-
-</body>
-
+            form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+    </body>
 </html>
