@@ -445,3 +445,9 @@ nav .fa-solid {
         flex-basis: 100%;
     }
 }
+
+#msg {
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}
