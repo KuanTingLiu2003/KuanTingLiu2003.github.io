@@ -14,13 +14,15 @@
         <div class="container">
             <nav>
                 <img src="images/Logo.png" class="logo">
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Hobbies</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#services" onclick="closemenu()">Expertise</a></li>
+                    <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <div class="role-container">
@@ -42,12 +44,12 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p class="intro"><span>Hi! My name is Andrew Liu. I am a resourceful and dedicated 
+                    <p class="intro"><span>Welcome to my website! My name is Andrew Liu. I am a dedicated 
                        college student with international experience, currently 
                        pursuing a BS in Electrical Engineering and Computer Engineering 
                        at UC Irvine. I am eager to leverage skills in Python, C, VHDL, 
                        and other engineering skills to contribute to technology development. 
-                       Deeply motivated and enthusiastic about creating beneficial technologies 
+                       I am also deeply motivated and enthusiastic about creating beneficial technologies 
                        and making an impact on future computer technology and engineering.</span></p>
                     
                     <div class="tab-titles">
@@ -61,7 +63,7 @@
                             <li><span>Embedded System</span><br>Arduino, CANBUS, I2C, Sensors, and LV Circuits</li>
                             <li><span>Equipment & Machines</span><br>Oscilloscope, Function Generator, Digital Multimeter, 3D Printing, Laser Cutting, Soldering</li>
                             <li><span>Programming</span><br>Python, C / C++, VHDL, Assembly, Dart / Flutter, HTML / CSS / JavaScript</li>
-                            <li><span>CAD & Software</span><br>Git, GitHub, Xilinx Vivado, TinkerCAD, LTSpice, SolidWorks, KiCAD, MS Office</li>
+                            <li><span>CAD & Software</span><br>Git, GitHub, Xilinx Vivado, TinkerCAD, LTSpice, SolidWorks, KiCAD, Figma, MS Office</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
@@ -73,7 +75,7 @@
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2021 - 2025 (Expected Graduation)</span><br>B.S. in Electrical Engineering<br>
+                            <li><span>2021 - 2025 (Expected Graduation)</span><br>B.S. in Electrical Engineering w/ Semiconductor and Optoelectronics Specialization<br>
                                 B.S. in Computer Engineering from UC Irvine</li>
                             <li><span>2019</span><br>H.S. Diploma from San Mateo High School</li>
                         </ul>
@@ -92,22 +94,24 @@
                 <div>
                     <i class="fa-solid fa-microchip"></i>
                     <h2>Electronics and IC Design</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, 
-                    tincidunt sit amet sapien quis.</p>
+                    <p>Proficient in RTL design, network analysis, and filter design. Specialization in Semiconductor and Optoelectronics with strong background and knowledge
+                        on IC products.
+                    </p>
                     <a href="#">Learn More</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-solar-panel"></i>
                     <h2>Renewable Energy Solutions</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, 
-                        tincidunt sit amet sapien quis.</p>
+                    <p>Research and Development experience in Solar cells and panel manufacturing. Knowledgable regarding
+                        renewable energy power systems and design.
+                    </p>
                     <a href="#">Learn More</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Web and Applications Design</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, 
-                        tincidunt sit amet sapien quis.</p>
+                    <p>Created various web and applications with a wide range of languages including Python, C, HTML / CSS / JS, and Dart (Flutter).
+                        Strong background in programming.</p>
                     <a href="#">Learn More</a>
                 </div>
             </div>
@@ -152,7 +156,7 @@
         </div>
     </div>
 
-    <!--------Portfolio Section-------->
+    <!--------Contact Section-------->
 
     <div id="contact">
         <div class="container">
@@ -160,7 +164,8 @@
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
                     <p><i class="fa-solid fa-paper-plane"></i> kuantl4@uci.edu</p>
-                    <p><i class="fa-solid fa-square-phone"></i> (650)303-0447</p>
+                    <p><i class="fa-solid fa-square-phone"></i> (650) 303 - 0447</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Irvine, CA</p>
                     <div class="social-icons">
                         <a href="https://www.linkedin.com/in/kuan-ting-liu2023/"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://www.instagram.com/andrew.liu_2003/"><i class="fa-brands fa-instagram"></i></a>
@@ -181,6 +186,7 @@
         </div>
     </div>
 
+    <!---For About Me Section dynamic tabs-->
     <script>
         
         var tablinks = document.getElementsByClassName("tab-links");
@@ -197,7 +203,8 @@
         } 
 
     </script>
-    
+   
+    <!---For typewriter effect on roles-->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed(".auto-type", {
@@ -206,6 +213,19 @@
             backSpeed: 120,
             loop: true
         })
+    </script>
+
+    <!---Popup menu for phone and smaller screens--->
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
     </script>
 
 </body>
