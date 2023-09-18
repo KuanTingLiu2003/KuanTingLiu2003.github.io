@@ -21,11 +21,11 @@
                     <nav>
                         <img src="../images/Logo.png" class="logo">
                         <ul id="sidemenu">
-                            <li><a href="#header" onclick="closemenu()">Home</a></li>
-                            <li><a href="#about" onclick="closemenu()">About</a></li>
-                            <li><a href="#services" onclick="closemenu()">Expertise</a></li>
-                            <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
-                            <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                            <li><a href="../index.html#home" onclick="closemenu()">Home</a></li>
+                            <li><a href="../index.html#about" onclick="closemenu()">About</a></li>
+                            <li><a href="../index.html#services" onclick="closemenu()">Expertise</a></li>
+                            <li><a href="#" onclick="closemenu()">Projects</a></li>
+                            <li><a href="../index.html#contact" onclick="closemenu()">Contact</a></li>
                             <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                         </ul>
                         <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -34,14 +34,23 @@
                         <div class="role-container">
                             <p><span class="auto-type"></span></p>
                         </div>
-                        
-                        <h1>Hi, I'm <span>Andrew</span><br>Liu from UC Irvine</h1>
+                        <h1>Welcome to My Project Space!</h1>
+                        <h3>Immerse yourself in my Engineering journey.</h3>
                     </div>
                 </div>
             </div>
         </div>
 
-        
+        <!---Popup menu for phone and smaller screens--->
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+        </script>
 
     </body>
 </html>
